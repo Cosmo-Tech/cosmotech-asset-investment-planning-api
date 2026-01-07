@@ -1,0 +1,5 @@
+nav:
+  - Home: 'index.md'
+  - Getting started:
+      - Dependencies: 'dependencies.md'
+      - Pull Request Checklist: 'pull_request.md'

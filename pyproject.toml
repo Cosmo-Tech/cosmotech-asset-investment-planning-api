@@ -1,0 +1,65 @@
+[metadata]
+licence_files = ["LICENSE"]
+
+[project]
+name = "cosmotech_asset_investment_planning_api"
+authors = [{ name = "Cosmo Tech", email = "platform@cosmotech.com" }]
+description = "API for Cosmo Tech Asset Investment Planning"
+urls.Homepage = "https://www.cosmotech.com"
+urls.Source = "https://github.com/Cosmo-Tech/Asset_Investment_Planning_API"
+urls.Documentation = "https://cosmo-tech.github.io/Asset_Investment_Planning_API"
+dynamic = ["version", "dependencies", "optional-dependencies"]
+readme = { file = "README.md", content-type = "text/markdown" }
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "--cov-report term-missing:skip-covered --cov=cosmotech.aip"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | generated
+  | __pycache__
+)/
+'''
+
+[tool.setuptools]
+include-package-data = true
+package-data."*" = [
+    "requirements.txt",
+    "requirements.doc.txt",
+    "requirements.test.txt",
+    "requirements.dev.txt"
+]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cosmotech.*"]
+
+[tool.setuptools.dynamic]
+version.attr = "cosmotech.aip.__version__"
+dependencies.file = "requirements.txt"
+optional-dependencies.doc.file = "requirements.doc.txt"
+optional-dependencies.test.file = "requirements.test.txt"
+optional-dependencies.dev.file = "requirements.dev.txt"
+optional-dependencies.all.file = "requirements.all.txt"

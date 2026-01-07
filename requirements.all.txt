@@ -1,0 +1,1 @@
+cosmotech_asset_investment_planning_api[doc,test,dev]
