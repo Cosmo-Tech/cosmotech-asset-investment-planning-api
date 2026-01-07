@@ -1,8 +1,8 @@
 site_name: Asset Investment Planning API
-repo_url: https://github.com/Cosmo-Tech/Asset_Investment_Planning_API
-repo_name: Cosmo-Tech/Asset_Investment_Planning_API
+repo_url: https://github.com/Cosmo-Tech/cosmotech-asset-investment-planning-api
+repo_name: Cosmo-Tech/cosmotech-asset-investment-planning-api
 site_description: Data API for Cosmo Tech Asset Investment Planning
-site_url: https://cosmo-tech.github.io/Asset_Investment_Planning_API/
+site_url: https://cosmo-tech.github.io/cosmotech-asset-investment-planning-api/
 
 theme:
   name: material

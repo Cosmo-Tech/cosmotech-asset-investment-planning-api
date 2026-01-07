@@ -2,12 +2,12 @@
 licence_files = ["LICENSE"]
 
 [project]
-name = "cosmotech_asset_investment_planning_api"
+name = "cosmotech-asset-investment-planning-api"
 authors = [{ name = "Cosmo Tech", email = "platform@cosmotech.com" }]
 description = "API for Cosmo Tech Asset Investment Planning"
 urls.Homepage = "https://www.cosmotech.com"
-urls.Source = "https://github.com/Cosmo-Tech/Asset_Investment_Planning_API"
-urls.Documentation = "https://cosmo-tech.github.io/Asset_Investment_Planning_API"
+urls.Source = "https://github.com/Cosmo-Tech/cosmotech-asset-investment-planning-api"
+urls.Documentation = "https://cosmo-tech.github.io/cosmotech-asset-investment-planning-api"
 dynamic = ["version", "dependencies", "optional-dependencies"]
 readme = { file = "README.md", content-type = "text/markdown" }
 
